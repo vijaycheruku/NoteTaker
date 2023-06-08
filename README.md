@@ -14,7 +14,7 @@ fs library is used for CRUD operations on json file
 
 ## Deployment
 
-APp is hosted on Heroku link here ![App on Heroku](https://notestaker-vijay.herokuapp.com/)
+App is hosted on Heroku link here https://notestaker-vijay.herokuapp.com/
 
 ## Screenshots
 
