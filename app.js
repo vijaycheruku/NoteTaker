@@ -5,6 +5,8 @@ const data = require('./db/db.json');
 const { addNote, deleteNote} = require('./helper');
 
 const app = express();
+//changed default port to 5001
+const PORT = process.env.PORT || 5001
 
 //To parse incoming request with url encoded payloads
 app.use(express.urlencoded({
@@ -44,8 +46,8 @@ app.delete('/api/notes/:id', (req,res) => {
 //this line helps to serve static files on sever
 app.use(express.static(path.join(__dirname, 'public')));
 
-//create a port on 3000
-app.listen(3000);
+//create a port on PORT
+app.listen(PORT);
  
 //console statement that is printing once server is loaded
-console.log('Running at Port 3000');
+console.log('Running at Port '+PORT);
